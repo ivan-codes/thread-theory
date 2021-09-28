@@ -1,6 +1,6 @@
-# Thread Theory
+# Thread Theory 🧵
 
-Read and write twitter-like threads 🧵
+Read and write twitter-like threads
 
 ### 👩‍💻 Setup
 
