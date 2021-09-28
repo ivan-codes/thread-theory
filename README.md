@@ -2,13 +2,13 @@
 
 Read and write twitter-like threads.
 
-### Setup
+### 👩‍💻 Setup
 
 1. Run `npm install` or `yarn install`
 2. Run `npm run dev` or `yarn dev`
 3. Visit http://localhost:3000
 
-### Technologies
+### 🛠 Technologies
 
 - Next.js
 - Typescript
