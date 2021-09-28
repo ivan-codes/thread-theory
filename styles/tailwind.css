@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: "Libre Franklin", sans-serif;
+  @apply text-font-color;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+}
+
+.thread-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5rem;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 5rem;
+  border: 2px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
