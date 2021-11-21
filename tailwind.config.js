@@ -11,14 +11,14 @@ module.exports = {
     extend: {
       colors: {
         accent: "#4575FA",
-        background: "#FAFBFF",
+        background: "#F1F2F2", // "#FAFBFF",
         link: "#1B95E0",
-        "font-color": "#111827",
+        "font-color": "#212B32", // "#111827",
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

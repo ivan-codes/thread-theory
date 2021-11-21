@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
 import Head from "next/head";
+import React, { ReactNode } from "react";
 import Search from "svgs/search.svg";
 
 type Props = {
@@ -9,13 +9,13 @@ type Props = {
 
 export function Layout({ children, title = "Thread Theory" }: Props) {
   return (
-    <div className="page-grid w-full h-full bg-background">
+    <div className="w-full h-full">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <nav className="grid grid-cols-12 items-center w-full h-12 bg-white border-b">
+      {/* <nav className="grid grid-cols-12 items-center w-full h-12 bg-white border-b">
         <div className="flex col-start-1 col-end-7 px-5">
           <input
             type="text"
@@ -28,7 +28,7 @@ export function Layout({ children, title = "Thread Theory" }: Props) {
             <Search className="w-5 h-5 fill-current" />
           </button>
         </div>
-      </nav>
+      </nav> */}
       {children}
       <footer></footer>
     </div>

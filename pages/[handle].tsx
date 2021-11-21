@@ -1,19 +1,16 @@
 import Post from "components/Post";
-import Search from "components/Search";
+import ProfileHeader from "components/ProfileHeader";
 import ThreadLayout from "components/ThreadLayout";
 import { useRouter } from "next/router";
 import React from "react";
 
-function ExplorePage() {
+function ProfilePage() {
   const router = useRouter();
-  const { search, thread } = router.query;
+  const { thread } = router.query;
 
   return (
-    <ThreadLayout
-      title="Explore | Thread Theory"
-      thread={thread as string | undefined}
-    >
-      <Search fillSearch={search as string | undefined} />
+    <ThreadLayout title="Username" thread={thread as string | undefined}>
+      <ProfileHeader />
       <Post />
       <Post />
       <Post />
@@ -24,4 +21,4 @@ function ExplorePage() {
   );
 }
 
-export default ExplorePage;
+export default ProfilePage;
